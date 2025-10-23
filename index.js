@@ -15,6 +15,12 @@ is
 a
 comment
 */
+
+
+
+
+
+
 //variable = a container that stores a value.
 //behaves as if it were the values it cont
 
@@ -79,6 +85,12 @@ operator precedence
 //let result = 6 / 2 ** (2 + 5);
 //console.log(result);
 
+
+
+
+
+
+
 //how to accept user input
 
 // 1. easy way = window prompt
@@ -97,6 +109,10 @@ operator precedence
     //document.getElementById("myH1").textContent = `Hello ${username}`
     //console.log(username);
 //}
+
+
+
+
 
 
 //type conversion = change the datatype of a value to another
@@ -119,6 +135,10 @@ operator precedence
 //console.log(y, typeof y);
 //console.log(z, typeof z);
 
+
+
+
+
 //const = a variable that cant be changed
 
 //let PI = 3.14159;
@@ -132,6 +152,12 @@ operator precedence
     //circumference = 2 * PI * radius;
     //document.getElementById("myH3").textContent = circumference;
 //}
+
+
+
+
+
+
 
 // COUNTER PROGRAM
 
@@ -154,6 +180,12 @@ operator precedence
 //     countLabel.textContent = count;
 // }
 
+
+
+
+
+
+
 //math = built-in object that provides a 
 //collection of properties and methods
 
@@ -173,15 +205,298 @@ operator precedence
 
 // console.log(z);
 
+
+
+
+
+
 //RANDOM NUMBER GENERATOR
 
-const myButton = document.getElementById("myButton");
-const myLabel = document.getElementById("myLabel");
-const min = 1;
-const max = 6;
-let randomNum;
+// const myButton = document.getElementById("myButton");
+//const myLabel = document.getElementById("myLabel");
+//const min = 1;
+//const max = 6;
+//let randomNum;
 
-myButton.onclick = function (){
-    randomNum = Math.floor(Math.random()* max) + min;
-    myLabel.textContent = randomNum;
-}
+//myButton.onclick = function (){
+    //randomNum = Math.floor(Math.random()* max) + min;
+    //myLabel.textContent = randomNum;
+//}
+
+
+
+
+
+
+ //IF STATEMENTS = IF A CONDITION IS TRUE, EXECUTE SOME CODE IF NOT, DO SOMETHING ELSE
+
+//let age = 25;
+
+//const mytext = document.getElementById("mytext");
+//const mysubmit = document.getElementById("mysubmit");
+//const resultelement = document.getElementById("resultelement");
+//let age;
+
+//mysubmit.onclick = function(){
+
+    //age = mytext.value;
+    //age = Number(age);
+
+ //if(age >= 100){
+    //resultelement.textContent = `you are too old to enter this site`;
+ //}
+ //else if(age == 0){
+ //resultelement.textContent = `you cant enter, you were just born`;
+//}
+//else if(age >= 18){
+//resultelement.textContent = `you are old enough to enter this site`;
+//}
+//else if(age < 0){
+//resultelement.textContent = `your age cant be below 0`;
+//}
+ //else{
+    //resultelement.textContent = `you must be 18+ to enter this site`;
+ //}
+//}
+
+
+
+
+
+ //.CHECKED = PROPERTY THAT DETERMINES THE CHECKED STATE OF AN 
+// HTML CHECKBOX OR RADIO BUTTON ELEMENT
+
+//const myCheckbox = document.getElementById("myCheckBox");
+//const visaBtn = document.getElementById("visaBtn");
+//const masterCardBtn = document.getElementById("masterCardBtn");
+//const payPalBtn = document.getElementById("payPalBtn");
+//const mySubmitBtn = document.getElementById("mySubmitBtn");
+//const subResult = document.getElementById("subResult");
+//const paymentResult = document.getElementById("paymentResult");
+
+//mySubmitBtn.onclick = function(){
+
+//    if(myCheckbox.checked){
+  //      subResult.textContent = `you are subscribed`;
+    //}
+    //else{
+      //  subResult.textContent = `you are not subscribed`;
+    //}
+    //if(visaBtn.checked){
+      //  paymentResult.textContent = `you are paying with a visa`;
+    //}
+    //else if(masterCardBtn.checked){
+      //  paymentResult.textContent = `you are paying with Mastercard`;
+    //}
+    //else if(payPalBtn.checked){
+      //  paymentResult.textContent = `you are paying with payPal`;
+    //}
+    //else{
+      //  paymentResult.textContent = `you must select payment method`;
+    //}
+//}
+
+
+
+
+
+//TERNARY OPERATOR = A SHORTCUT TO IF {} AND ELSE {} STATEMENTS
+//HELPS TO ASSIGN A VARIABLE BASED ON A CONDITION
+//CONDITION ? codeifTrue :codeifFalse;
+
+//let time = 16;
+//let greeting = time < 12 ? "good morning!" : "good afternoon!";
+//console.log(greeting);
+
+//let isstudent = false;
+//let message = isstudent ? "you are a student" : "you are not a student";
+//console.log(message);
+
+//let purchaseamount = 190;
+//let discount = purchaseamount >= 100 ? 10 : 0;
+//console.log(`your total is $${purchaseamount - purchaseamount * (discount)}`);
+
+
+
+
+//SWITCH = CAN BE AN EFFICIENT REPLACEMENT TO MANY ELSE IF STATEMENTS
+
+//let day = 1;
+
+//switch(day){
+    //case 1:
+     //     console.log("it is monday");
+       //   break;
+    //case 2:
+       // console.log("it is tuesday");
+        //break;
+    //case 3:
+      //  console.log("it is wednesday");
+       // break;
+    //case 4:
+      //  console.log("it is thursday");
+        //break;
+    //case 5:
+      //  console.log("it is friday");
+        //break;
+    //case 6:
+      //  console.log("it is saturday");
+        //break;
+    //case 7:
+      //  console.log("it is sunday");
+        //break;
+//}
+
+//let testscore = 21;
+//let lettergrade;
+
+//switch(true){
+  //  case testscore >=90:
+    //    lettergrade = "A";
+      //  break;
+    //case testscore >=80:
+      //  lettergrade = "B";
+        //break;
+    //case testscore >=60:
+      //  lettergrade = "C";
+        //break;
+    //case testscore >=40:
+      //  lettergrade = "D";
+        //break;
+    //case testscore >=20:
+      //  lettergrade = "E";
+        //break;
+    //default:
+      //  lettergrade = "F";
+        //break;
+//}
+
+//console.log(lettergrade);
+
+
+
+
+
+
+
+
+//STRING METHODS = ALLOW YOU TO MANIPULATE AND WORK WITH TEXT (STRINGS)
+
+//let userName = "Polluste";
+
+//userName.charAt(0)
+//console.log(userName.charAt(2)); //VÕTAB TÄHE NIMEST, TÄHT = ARV NTX:2
+
+//let str= "hello world";
+//console.log(str.length); //Tagastab stringi pikkuse (tähemärkide arvu)
+
+//let str = "hello world";
+//console.log(str.toUpperCase()); //toUpperCase(): Muudab kõik tähemärgid suurteks tähtedeks.
+//console.log(str.toLowerCase()); //toLowerCase(): Muudab kõik tähemärgid väikesteks tähtedeks.
+
+//let text = "hellow world";
+//console.log(text.indexOf("o")); //indexOf() otsib esimese esinemise indeksit antud sõne stringis.
+//console.log(text.lastIndexOf("o")); //lastIndexOf() otsib viimase esinemise indeksit.
+//let str = "hello world";
+//console.log(str.indexOf("world"));
+//console.log(str.indexOf("javascript"));
+
+//let text = "hello world"; //includes(substring) - Kontrollib, kas string sisaldab kindlat alamstringi. Tagastab true või false.
+//console.log(text.includes("world"));
+//console.log(text.includes("javascript"));
+
+//let text = "hellow world";  //Võtab välja osa stringist antud algus- ja lõppuindeksi vahel. Lõppuindeksit ei kaasata.
+//console.log(text.slice(0, 5));
+//console.log(text.slice(7));
+
+//const email = "polluste888@gmail.com";
+//let username =email.slice(0, email.indexOf("@"));
+//let extension = email.slice(email.indexOf("@"));
+
+//console.log(username)
+//onsole.log(extension)
+
+
+//let text = "hello world";   //replace() - Asendab stringis esimese leitud väärtuse teisega.
+//let newtext = text.replace("world", "javascript");
+//console.log(newtext);
+
+//let text = "hello world";   //split() - Jagab stringi tükkideks vastavalt antud märgile ja tagastab massiivi.
+//let words = text.split(",");
+//console.log(words);
+
+//let text = "hello, world!  ";  //trim() - Eemaldab tühikud stringi algusest ja lõpust.
+//console.log(text.trim());
+
+
+
+
+
+
+//METHOD CHAINING = CALLING ONE METHOD AFTER ANOTHER IN ONE CONTINOUS LIVE OF CODE.
+
+//--NO METHOD CHAINING --//
+
+//let username = window.prompt("Enter your username: ");
+
+//username = username.trim();
+//let letter = username.charAt(0);
+//letter = letter.toUpperCase();
+
+//let extraChars = username.slice(1);
+//extraChars = extraChars.toLowerCase();
+//username = letter + extraChars;
+
+//console.log(username);
+
+
+
+
+
+
+//--METHOD CHAINING ----
+
+//username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+//console.log(username);
+
+
+
+//LOGICAL OPERATORS = USED TO COMBINE OR MANIPULATE BOOLEAN VALUES (true & false)
+
+//AND = &&
+//OR I I
+//NOT = !
+
+//const temp = 30;
+
+//if(temp > 0 && temp <= 30){
+  //  console.log("the weather is good");
+//}
+//else{
+  //  console.log("the weather is bad");
+//}
+
+//const isSunny = true;
+
+//if(!isSunny){
+  //  console.log("it is cloudy");
+//}
+//else{
+  //  console.log("it is Sunny");
+//}
+
+// =ASSIGNMENT OPERATOR
+// ==COMPARISON OPERATOR (COMPARE IF VALUES ARE EQUAL)
+// === STRICK EQUALITY OPERATOR (COMPARE IF VALUES & DATATYPE ARE EQAUL)
+// != INEQUALITY OPERATOR
+// !== STRICT INEQUALITY OPERATOR
+
+//const PI = 3.14;
+
+//if(PI !== "3.14"){
+  //  console.log("that is Pi");
+//}
+//else{
+  //  console.log("that is not Pi");
+//}
