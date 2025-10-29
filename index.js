@@ -582,3 +582,134 @@ operator precedence
 // }
 // calculate();
 
+
+
+
+
+
+// WHILE LOOP = REPEAT SOME CODE WHILE SOME CONDITION IS TRUE
+
+// let username = "Bert";
+
+// while(username === "" || username === null){
+//     //console.log(`you didnt enter your name`);
+//     username = window.prompt(`enter your name`);
+// }
+// console.log(`Hello ${username}`);
+
+// let loggedIn = false;
+// let username;
+// let password;
+
+// while(!loggedIn){
+//     username = window.prompt(`enter your username`);
+//     password = window.prompt(`enter your password`);
+
+//     if(username === "myUsername" && password === "myPassword"){
+//         loggedIn = true;
+//         console.log("you are logged in!");
+//         break;
+//     }
+//     else{
+//         console.log("invalid credentials! please try again");
+//         break;
+//     }
+// }
+
+
+
+
+
+
+
+//  FOR LOOP = REPEAT SOME CODE A LIMITED AMOUNT OF TIMES
+
+// for(let i = 20; i >0; i--){
+//     console.log(i);
+// }
+
+// console.log("happy new year");
+
+// for(let i = 1; i <= 20; i++){
+//     if(i == 19){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+
+
+
+//NUMBER GUESSING GAME
+
+const minNum = 50;
+const maxNum = 100;
+const answer = Math.floor(Math.random() * 100 + 1) + minNum;
+
+let attempts = 0;
+let guess;
+let running = true;
+
+while(running){
+    guess = window.prompt(`guess a number between ${minNum} - ${maxNum}`);
+guess = Number(guess);
+
+if(isNaN(guess)){
+    window.alert("please enter a valid number");
+}
+else if(guess < minNum || guess > maxNum){
+    window.alert("please enter a valid number");
+}
+
+    running = false;
+}
+
+
+
+
+
+// FUNCTION = A SECTION OF REUSABLE CODE.
+// DECLARE CODE ONCE, USE IT WHENEVER YOU WANT.
+// CALL THE FUNCTION TO EXECUTE THAT CODE.
+
+// function happyBirthday(username, age){
+//     console.log("Happy birthday to you");
+//     console.log("Happy birthday to you");
+//     console.log(`Happy birthday dear ${username}!`);
+//     console.log("Happy birthday to you");
+//     console.log(`you are ${age} years old`);
+// }
+
+// happyBirthday("Rasmus", 30);
+// happyBirthday("oskar", 16);
+// happyBirthday("lauri", 65);
+
+// function add(x , y){
+//     let result = x + y;
+//     return result;
+// }
+
+// let answer = add(2, 3);
+// console.log(answer);
+
+
+
+
+
+//VARIALE SCOPE = WHERE A VARIABLE IS RECONIZED AND ACCESSIBLE (LOCAL AND GLOBAL)
+
+
+// let x = 3;
+
+
+// function1();
+
+//     function function1(){
+//         console.log(x);
+//     }
+
+//     function function2(){
+//         console.log(x);
+//}
