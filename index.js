@@ -500,3 +500,85 @@ operator precedence
 //else{
   //  console.log("that is not Pi");
 //}
+
+
+
+
+// function controlage() {
+//   let age = prompt("Sisesta oma vanus:");
+
+//   if (age === "" || isNaN(age)) {
+//     alert("Sisend ei ole korrektne. Palun sisesta vanus arvuliselt.");
+//   } else {
+//     age = Number(age); 
+
+//     if (age >= 1 && age <=6){
+//       alert("oled liiga noor et süüa saada,aeg arvuti kinni panna.");
+//     }
+//       else if (age >= 7 && age <= 16){
+//       alert("Oled põhikooli õpilane. Söömine toimub kell 10.");
+//     } else if (age >= 17 && age <= 20){
+//       alert("Oled gümnaasiumi õpilane. Söömine toimub kell 11.");
+//     } else if (age >=20 && age <=30){
+//       alert("Oled täiskasvanu. Söömine toimub kell 12.");
+//     } else{
+//       alert("Sinu vanusele pole määratud söömisaega.");
+//     }
+//   }
+// }
+// controlage();
+
+
+
+
+// function calculate() {
+//   let x = prompt("x:");
+//   let y = prompt("y:");
+
+//   if (isNaN(x) || isNaN(y) || x === "" || y === "") {
+//     alert("The input is not correct. Please enter two numbers.");
+//     calculate();
+//     return;
+//   }
+//   x = Number(x);
+//   y = Number(y);
+
+//   let operation = prompt("Operation:");
+
+//   let symbol;
+//   let result;
+
+//   switch (operation) {
+//     case "a":
+//      symbol = "+";
+//       result = x + y;
+//       break;
+//     case "s":
+//      symbol = "-";
+//       result = x - y;
+//       break;
+//     case "m":
+//      symbol = "*";
+//       result = x * y;
+//       break;
+//     case "d":
+//       symbol = "/";
+//       result = x / y;
+//       break;
+//     case "e":
+//       symbol = "**";
+//       result = x ** y;
+//       break;
+//     case "r":
+//       symbol = "%";
+//       result = x % y;
+//       break;
+//     default:
+//       alert("Unknown operation");
+//       return;
+//   }
+
+//   alert(`${x} ${symbol} ${y} = ${result}`);
+// }
+// calculate();
+
