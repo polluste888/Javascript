@@ -644,27 +644,27 @@ operator precedence
 
 //NUMBER GUESSING GAME
 
-const minNum = 50;
-const maxNum = 100;
-const answer = Math.floor(Math.random() * 100 + 1) + minNum;
+// const minNum = 50;
+// const maxNum = 100;
+// const answer = Math.floor(Math.random() * (maxNum - minNum + 1) + minNum;
 
-let attempts = 0;
-let guess;
-let running = true;
+// let attempts = 0;
+// let guess;
+// let running = true;
 
-while(running){
-    guess = window.prompt(`guess a number between ${minNum} - ${maxNum}`);
-guess = Number(guess);
+// while(running){
+//     guess = window.prompt(`guess a number between ${minNum} - ${maxNum}`);
+// guess = Number(guess);
 
-if(isNaN(guess)){
-    window.alert("please enter a valid number");
-}
-else if(guess < minNum || guess > maxNum){
-    window.alert("please enter a valid number");
-}
+// if(isNaN(guess)){
+//     window.alert("please enter a valid number");
+// }
+// else if(guess < minNum || guess > maxNum){
+//     window.alert("please enter a valid number");
+// }
 
-    running = false;
-}
+//     running = false;
+// }
 
 
 
@@ -713,3 +713,186 @@ else if(guess < minNum || guess > maxNum){
 //     function function2(){
 //         console.log(x);
 //}
+
+
+
+//ARRAY = A VARIABLE LIKE STRUCTURE THAT CAN HOLD MORE THAN 1 VALUE
+
+
+
+// let fruits = ["apple", "orange", "cherry", "coconut"];
+
+//Fruits.push("coconut");
+//fruits.pop();
+//fruits.unshift("mango"); -LISAB ALGUSESSE YHE
+//fruits.shift(); -KUSTUTAB ALGUSEST YHE ÄRA
+
+// console.log(fruits [0]);
+// console.log(fruits [1]);
+// console.log(fruits [2]);
+// console.log(fruits [3]);
+
+// let numOfFruits = fruits.length;
+// let index = fruits.indexOf("mango");
+
+// console.log(numOfFruits);
+
+
+// for(let i = 0; i < fruits.length; i--){
+//     console.log(fruits[i]);
+//}
+
+// fruits.sort().reverse();
+
+// for(let fruit of fruits){
+//     console.log(fruit);
+// }
+
+
+
+
+// SPREAD OPERATOR == ... ALLOWS AN ITERABLE SUCH AS AN ARRAY OR STRING TO BE EXPANDED INTO SEPERATE ELEMENTS (UNPACK THE ELEMENTS)
+
+// let numbers = [1, 2, 3, 4, 5];
+// let max = Math.max(...numbers);
+// let min = Math.min(...numbers);
+
+// console.log(max);
+
+// let username = "bert põllutse";
+// let letters = [...username].join("-");
+
+// console.log(letters);
+
+
+// let fruits = ["apple", "orange", "cherry"];
+// let vegetables = ["carrot", "potato", "tomato"];
+// let newfruits = [...fruits,...vegetables, "eggs", "milk"];
+
+// console.log(foods);
+
+
+
+//REST PARAMENTS = (...REST) ALLOW A FUNCTION WORK WITH A VARIABLE NUMBER OF ARGUMENTS BY BUNDLING THEM INTO AN ARRAY
+// SPREAD = EXPANDS AN ARRAY INTO SEPERATE ELEMENTS
+// REST = BUNDLES SEPERATE ELEMENTS INTO AN ARRAY
+
+// function openfridge(...foods){
+//     console.log(foods);
+// }
+
+// function getfood(...foods){
+//     return foods;
+// }
+
+// const food1 = "pizza";
+// const food2 = "hamburger";
+// const food3 = "hotdog";
+// const food4 = "sushi";
+// const food5 = "ramen";
+
+// //openfridge(food1, food2, food3, food4, food5);
+
+// const foods= getfood(food1, food2, food3, food4, food5);
+
+// console.log(foods);
+
+// function sum(...numbers){
+//     for(let number of numbers){
+//         result += numbers;
+//     }
+//     return result;
+// }
+
+// const total = sum(1, 2, 3, 4, 5);
+
+// console.log(`your total is $${total}`);
+
+// function getavarage(...numbers){
+//     let result = 0;
+//     for(let number of numbers){
+//         result += numbers;
+//     }
+//     return result / numbers.length;
+// }
+
+// const total = getavarage(75, 100, 86, 90, 50);
+
+// console.log(total);
+
+// function combinestring(...strings){
+//     return strings.join(" ");
+// }
+
+// const fullname = combinestring("mr", "kalle", "püks", "III")
+
+// console.log(fullname);
+
+
+
+
+// function rolldice(){
+
+//     const numdice = document.getElementById("numdice").value;
+//     const diceresult = document.getElementById("resultdice");
+//     const diceimages = document.getElementById("diceimages");
+//     const values = [];
+//     const images = [];
+
+//     for(let i = 0; i < numdice; i++){
+//         const maxNum = 6;
+//         const minNum = 1;
+//         const value = Math.floor(Math.random()* (maxNum - minNum + 1) + minNum);
+//         values.push(value);
+//         images.push(`<img src="diceimages/${value}.png">`);
+//     }
+//     diceresult.textcontent = `ROLLED ${values.join(',')}`;
+//     diceimages.innerHTML = images.join('');
+// }
+
+
+
+
+
+// CALLBACK = A FUNCTION THAT IS PASSED AS AN ARGUMENT
+// TO ANOTHER FUNCTION.
+
+
+// hello(leave);
+
+
+// function hello(callback){
+//     console.log("hello");
+//     callback();
+// }
+
+// function leave(){
+//     console.log("leave");
+// }
+
+// function wait(){
+//     console.log("wait");
+// }
+
+// function bye(){
+//     console.log("bye");
+// }
+
+
+// sum(displayconsole, 1, 2);
+
+// function sum(callback, x, y){
+//     let result = x + y;
+//     callback(result);
+// }
+
+// function displayconsole(result){
+//     console.log(result);
+// }
+
+// function displaypage(result){
+//     document.getElementById("myH1").textContent = result;
+// }
+
+//CAMEL TO TITLE
+
