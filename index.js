@@ -894,5 +894,451 @@ operator precedence
 //     document.getElementById("myH1").textContent = result;
 // }
 
-//CAMEL TO TITLE
 
+
+//CAMEL TO title
+
+// function getWords(camelStr) {
+  
+//   return camelStr.match(/([A-Z]?[a-z]+)/g) || [];
+// }
+
+// function camelToTitleCase(camelStr) {
+  
+//   if (camelStr === "") {
+//     return "";
+//   }
+
+//   const words = getWords(camelStr);
+
+//   const titleWords = words.map(function (word) {
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+//   });
+
+//   return titleWords.join(" ");
+// }
+
+// console.log(camelToTitleCase("SuurPere"));      
+// console.log(camelToTitleCase("TereTulemastSiia"));     
+// console.log(camelToTitleCase("SuurRohelineAuto"));                
+// console.log(camelToTitleCase("IlusKollanePäike"));
+
+
+
+
+//NUMBER GUESSING GAME
+
+
+
+// function numberGuessingGame() {
+  
+//   const secretNumber = Math.floor(Math.random() * 100) + 1;
+//   const maxAttempts = 15;
+//   let attempts = 0;
+
+//   alert("Tsau! Arva ära number vahemikus 1 kuni 100.");
+//   alert(`Sul on ${maxAttempts} katset.`);
+
+//   while (attempts < maxAttempts) {
+//     let guess = prompt(`Katse ${attempts + 1}: Tee oma pakkumine`);
+
+    
+//     if (guess === null || guess.trim() === "" || isNaN(guess)) {
+//       alert("Sisesta korrektne arv.");
+//       continue;
+//     }
+
+//     guess = Number(guess);
+//     attempts++;
+
+//     if (guess === secretNumber) {
+//       alert(`Juhhuu! arvasid numbri ära ${secretNumber} ${attempts} katsega. Palju õnne!`);
+//       return;
+//     } else if (guess < secretNumber) {
+//       alert("Arv on suurem,proovi uuesti!");
+//     } else {
+//       alert("Arv on madalam,proovi uuesti!");
+//     }
+//   }
+
+//   alert(`Mäng läbi! Õige number oli ${secretNumber}. Proovi uuesti!`);
+// }
+
+
+// numberGuessingGame();
+
+
+
+
+
+//Temperature Conversion Program
+
+
+
+
+// function celsiusToFahrenheit(celsius) {
+//   return (celsius * 9) / 5 + 32;
+// }
+
+// function fahrenheitToCelsius(fahrenheit) {
+//   return ((fahrenheit - 32) * 5) / 9;
+// }
+
+// function celsiusToKelvin(celsius) {
+//   return celsius + 273.15;
+// }
+
+// function kelvinToCelsius(kelvin) {
+//   return kelvin - 273.15;
+// }
+
+// function temperatureConverter() {
+//   const tempInput = prompt("Sisesta endale meeldiv temperatuur:");
+//   const scaleInput = prompt("Sisesta endale sobiv temperatuuri ühik:");
+
+//   if (tempInput === null || isNaN(tempInput)) {
+//     alert("Palun sisesta arvuline temperatuur.");
+//     return;
+//   }
+  
+//   const temperature = Number(tempInput);
+//   const scale = scaleInput.trim().toUpperCase();
+
+//   let result = "";
+
+//   if (scale === "C") {
+//     result =
+//       `${temperature}°C = ${celsiusToFahrenheit(temperature).toFixed(2)}°F\n` +
+//       `${temperature}°C = ${celsiusToKelvin(temperature).toFixed(2)}K`;
+//   } else if (scale === "F") {
+//     const celsius = fahrenheitToCelsius(temperature);
+//     result =
+//       `${temperature}°F = ${celsius.toFixed(2)}°C\n` +
+//       `${temperature}°F = ${celsiusToKelvin(celsius).toFixed(2)}K`;
+//   } else if (scale === "K") {
+//     const celsius = kelvinToCelsius(temperature);
+//     result =
+//       `${temperature}K = ${celsius.toFixed(2)}°C\n` +
+//       `${temperature}K = ${celsiusToFahrenheit(celsius).toFixed(2)}°F`;
+//   } else {
+//     alert("Tundmatu skaala. Palun kasuta C, F või K.");
+//     return;
+//   }
+
+//   alert(result);
+// }
+
+// temperatureConverter();
+
+
+
+
+
+
+//FOREACH () = METHOD TO ITERATE OVER THE ELEMENTS OF AN ARRAY AND APPLY A SPECIFIED FUNCTION (CALLBACK) TO EACH ELEMENT
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// numbers.forEach(square);
+// numbers.forEach(triple);
+// numbers.forEach(double);
+// numbers.forEach(display);
+
+// function double(element, index, array){
+//     array[index] = element * 2;
+// }
+
+// function triple(element, index, array){
+//     array[index] = element * 3;
+// }
+
+// function square(elements , index, array){
+//     array[index] = Math.pow(element, 2);
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// let fruits = ["apple", "orange", "banana", "coco"];
+
+// fruits.forEach(capitalize);
+// fruits.forEach(upperCase);
+// fruits.forEach(display);
+
+// function upperCase(element, index, array){
+//     array[index] = element.toUpperCase();
+
+// }
+
+// function capitalize(element, index, array){
+//     array[index] = element.charAT(0).toUpperCase() + element.slice(1);
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+
+//.MAP() = ACCEPTS A CALLBACK AND APPLIES THAT FUNCTION TO EACH ELEMENT OF AN ARRAY, THEN RETURN A NEW ARRAY
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squares = numbers.map(square);
+// const cube = numbers.map(cube);
+
+// console.log(squares);
+
+// function square(element){
+//     return Math.pow(element, 2)
+// }
+
+// function cube(element){
+//     return Math.pow(cube, 3)
+// }
+
+// const students = ["Jaan", "Mart", "Oskar", "Mihkel"];
+// const studentsUpper = students.map(upperCase);
+// const studentsLower = students.map(LowerCase);
+
+// console.log(studentsLower);
+
+
+// function upperCase(element){
+// return element.toUpperCase();
+// }
+
+// function LowerCase(element){
+//     return element.toLowerCase();
+// }
+
+
+// const dates = ["2024-1-10", "2025-2-20", "2020-3-30"];
+// const formattedDates = dates.map(formatDates);
+
+// function formatDates(element){
+//     const parts = element.split("-");
+//     return `${parts[2]}.${parts[1]}.${parts[0]}`;
+// }
+
+// console.log(formattedDates);
+
+//.FILTER() = CREATES A NEW ARRAY BY FILTERING OUT ELEMENTS
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let evenNums = numbers.filter(isEven);
+// let oddNums = numbers.filter(isOdd);
+
+// console.log(oddNums);
+
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+
+// function isOdd(element){
+//     return element % 2 !== 0;
+// }
+
+// const ages = [5, 5, 10, 15, 20, 25, 30];
+
+
+
+// function isAdult(element){
+//     return element >= 18;
+// }
+
+// const only18 = ages.filter(isAdult);
+
+// console.log(only18);
+
+// function isMinor(element){
+//     return element <=18;
+// }
+
+// const words = ["apple", "banana", "orange", "kiwi", "pomegranate", "coco"];
+
+// function getShortWords(element){
+//     return element.length >= 6;
+// }
+
+// const only6 = words.filter(getShortWords);
+
+// console.log(getShortWords);
+
+
+
+
+
+
+//.REDUCE () = REDUCE THE ELEMENTS OF AN ARRAY TO A SINGLE VALUE
+
+
+
+// const prices = [5, 30, 10, 25, 15, 20];
+
+// const total = prices.reduce(sum);
+
+// console.log(`$${total.toFixed(2)}`);
+
+//  function sum(previous, next){
+//     return accumulator + element;
+//  }
+
+
+// const grades = [75, 80, 90, 80, 65, 95];
+
+// const maximum = grades.reduce(getMax);
+// const minimum = grades.reduce(getMin);
+
+// console.log(maximum);
+// console.log(minimum);
+
+// function getMax(accumulator, element){
+//     return Math.max(accumulator, element);
+// }
+
+// function getMin(accumulator, element){
+//     return Math.min(accumulator, element);
+// }
+
+
+
+
+
+//FUNCTION DECLARATION = DEFINE A REUSABLE BLOCK OF CODE THAT PERFORMS ASPECIFIC TASK
+
+
+// function hello(){
+//     console.log("hello");
+// }
+
+
+//FUNCTION EXPRESSIONS = A WAY TO DEFINE FUNCTION AS VALUES OR VARIABLES
+
+
+// const hello = function(){
+//     console.log("hello");
+// }
+
+
+// setTimeout(function(){
+//     console.log("hello");
+// }, 3000);
+
+
+
+
+
+//ARROW FUNCTION = A CONCISE WAY TO WRITE FUNCTION EXPRESSIONS GOOD FOR SIMPLE FUNCTIONS THAT YOU USE ONLY ONCE
+// (PARAMETERS) => SOME CODE
+
+
+
+
+// const wassup = (name, age) => {console.log(`wassup ${name}`)
+//                                console.log(`you are ${age} years old`)};
+// wassup("broski, 67");
+
+// setTimeout(useCallback, 3000);
+
+// function hello(){
+//     console.log("hello");
+// }
+
+
+
+
+
+//OBJECT = A COLLECTION OF RELATED AND/OR METHODS
+//CAN REPRESENT REAL WORLD OBJECTS (PEOPLE,PRODUCTS,PLACES)
+//OBJECT = {KEY:VALUE,FUNCTION()}
+
+
+// const person = {
+//   firstName: "Spongebob",
+//   lastName: "Squarepants",
+//   age: 30,
+//   isEmployed: true,
+//   sayHello: function(){console.log("HI! i am Spongebob")},
+//   eat: function(){console.log("i am eating a krabby patty")},
+// }
+
+// const person2 = {
+//   firstName: "Patrick",
+//   lastName: "Star",
+//   age: 31,
+//   isEmployed: false,
+//   sayHello: function(){console.log("HI! i am Patrik")},
+//   eat: function(){console.log("i am eating crack")},
+// }
+
+ // console.log(person.firstName);
+ // console.log(person.lastName);
+ // console.log(person.age);
+ // console.log(person.isEmployed);
+
+ // console.log(person2.firstName);
+ // console.log(person2.lastName);
+ // console.log(person2.age);
+ // console.log(person2.isEmployed);
+
+ // person.sayHello();
+ // person2.sayHello();
+
+// person.eat();
+// person2.eat();
+
+
+
+
+//THIS = REFERENCE TO THE OBJECT WHERE THIS IS USED 
+// (THE OBJECT DEPENDS ON THE IMMEDIATE CONTEXT)
+//PERSON.NAME = THIS.NAME
+
+// console.log(this);
+
+
+
+
+
+
+//SHOPPING CART ANALÜÜS
+
+
+// let shoppingCart = [
+//   { name: "õun", quantity: 4 },
+//   { name: "banaan", quantity: 2 },
+//   { name: "apelsiin", quantity: 5 },
+//   { name: "piim", quantity: 1 },
+//   { name: "sai", quantity: 2 }
+// ];
+
+// const totalQuantity = shoppingCart.reduce((Sum, item) => Sum + item.quantity, 0);
+// console.log("kogus", totalQuantity);
+
+// shoppingCart.push({ name: "jogurt", quantity: 3});
+// console.log("lisatud jogurt", shoppingCart);
+
+// const õunItem = shoppingCart.find(item => item.name === "õun");
+// if (õunItem){
+//   õunItem.quantity += 3;
+//   }
+//   else{
+//     shoppingCart.push({name: "õun", quantity: 3});
+//   }
+// console.log("uuentatud õuna kogus:", shoppingCart);
+
+// const hasõun = shoppingCart.some(item => item.name === "õun");
+// console.log("kas õun on olemas", hasõun);
+
+// shoppingCart = shoppingCart.filter(item => item.name !== "banaan");
+// console.log("eemaldatud banaan", shoppingCart);
+
+// const itemNames = shoppingCart.map(item => item.name);
+// console.log("tootenimed", itemNames);
+
+// const hasPiim = shoppingCart.some(item => item.name === "piim");
+// console.log("kas piim on olemas", hasPiim);
+
+// shoppingCart.sort((a,b) => a.quantity- b.quantity);
+// console.log("tooted koguse järgi", shoppingCart);
