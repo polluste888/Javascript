@@ -1,88 +1,88 @@
-const scores = [45, 88, 32, 99, 74, 50, 61, 92, 39];
-let currentScores = [...scores];
+// const scores = [45, 88, 32, 99, 74, 50, 61, 92, 39];
+// let currentScores = [...scores];
 
-//VIITED DOM-ILE
 
-const scorelist = document.getElementById("scoreList");
-const result = document.getElementById("result");
 
-const kpicount = document.getElementById("kpicount");
-const kpiavg = document.getElementById("kpiavg");
-const kpith = document.getElementById("kpith");
+// const scorelist = document.getElementById("scoreList");
+// const result = document.getElementById("result");
 
-const countInput = document.getElementById("count");
-//FUNKTSIOONI TULEMUSTE KUVAMISEKS
+// const kpicount = document.getElementById("kpicount");
+// const kpiavg = document.getElementById("kpiavg");
+// const kpith = document.getElementById("kpith");
 
-function renderScores(){
-    scorelist.innerHTML = "";
-    currentScores.forEach((score)=> {
-        const item = document.createElement("P");
-        item.textContent = score;
-        scorelist.appendChild(item);
-    });
-}
+// const countInput = document.getElementById("count");
 
-function addBonus(){
-    currentScores = currentScores.map((score) => score + 5);
-    renderScores();
-}
 
-function filterByThreshold() {
-  const filtered = currentScores.filter(score => score >= 60);
+// function renderScores(){
+//     scorelist.innerHTML = "";
+//     currentScores.forEach((score)=> {
+//         const item = document.createElement("P");
+//         item.textContent = score;
+//         scorelist.appendChild(item);
+//     });
+// }
 
-  scorelist.innerHTML = "";
+// function addBonus(){
+//     currentScores = currentScores.map((score) => score + 5);
+//     renderScores();
+// }
 
-  filtered.forEach(score => {
-    const item = document.createElement("p");
-    item.textContent = score;
-    scorelist.appendChild(item);
-  });
+// function filterByThreshold() {
+//   const filtered = currentScores.filter(score => score >= 60);
 
-  result.textContent = `Kuvab ${filtered.length} tulemust (≥ 60).`;
+//   scorelist.innerHTML = "";
 
-  if (kpicount) kpicount.textContent = filtered.length;
-}
+//   filtered.forEach(score => {
+//     const item = document.createElement("p");
+//     item.textContent = score;
+//     scorelist.appendChild(item);
+//   });
 
-//KESKMISE ARVUTAMINE
+//   result.textContent = `Kuvab ${filtered.length} tulemust (≥ 60).`;
 
-function showAverage() {
-  if (currentScores.length === 0) {
-    result.textContent = "Punkte pole saadaval.";
-    kpiavg.textContent = "";
-    return;
-  }
+//   if (kpicount) kpicount.textContent = filtered.length;
+// }
 
- const sum = currentScores.reduce((total, score) => total + score, 0);
-  const average = Math.round(sum / currentScores.length);
 
-  result.textContent = `Keskmine tulemus: ${average}`;
-  kpiavg.textContent = average;
-}
-function resetAll() {
-  currentScores = [...scores];
 
-  renderScores();
+// function showAverage() {
+//   if (currentScores.length === 0) {
+//     result.textContent = "Punkte pole saadaval.";
+//     kpiavg.textContent = "";
+//     return;
+//   }
 
-  kpiavg.textContent = "-";
+//  const sum = currentScores.reduce((total, score) => total + score, 0);
+//   const average = Math.round(sum / currentScores.length);
 
-  result.textContent = "";
-}
-function makeRandom() {
+//   result.textContent = `Keskmine tulemus: ${average}`;
+//   kpiavg.textContent = average;
+// }
+// function resetAll() {
+//   currentScores = [...scores];
 
-  const n = parseInt(countInput.value);
-  const newScores = [];
+//   renderScores();
 
-  for (let i = 0; i < n; i++) {
+//   kpiavg.textContent = "-";
 
-    const randomScore = Math.floor(Math.random() * 101); 
-    newScores.push(randomScore);
-  }
+//   result.textContent = "";
+// }
+// function makeRandom() {
 
-  currentScores = newScores;
+//   const n = parseInt(countInput.value);
+//   const newScores = [];
 
-  renderScores();
+//   for (let i = 0; i < n; i++) {
 
-  kpiAvg.textContent = "";
+//     const randomScore = Math.floor(Math.random() * 101); 
+//     newScores.push(randomScore);
+//   }
 
-  result.textContent = "";
-}
+//   currentScores = newScores;
+
+//   renderScores();
+
+//   kpiAvg.textContent = "";
+
+//   result.textContent = "";
+// }

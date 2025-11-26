@@ -7,7 +7,6 @@
 //document.getElementById("myH1").textContent = "Hello!";
 //document.getElementById("myP").textContent = "I like pizza!";
 
-
 // this is comment
 /*
 this
@@ -15,11 +14,6 @@ is
 a
 comment
 */
-
-
-
-
-
 
 //variable = a container that stores a value.
 //behaves as if it were the values it cont
@@ -44,7 +38,6 @@ comment
 
 //console.log(typeof firstName);
 //console.log(`Your name is ${firstName}`);
-
 
 //console.log(age);
 //console.log(price);
@@ -85,12 +78,6 @@ operator precedence
 //let result = 6 / 2 ** (2 + 5);
 //console.log(result);
 
-
-
-
-
-
-
 //how to accept user input
 
 // 1. easy way = window prompt
@@ -105,15 +92,10 @@ operator precedence
 //let username;
 
 //document.getElementById("mySubmit").onclick = function(){
-    //username = document.getElementById("myText").value;
-    //document.getElementById("myH1").textContent = `Hello ${username}`
-    //console.log(username);
+//username = document.getElementById("myText").value;
+//document.getElementById("myH1").textContent = `Hello ${username}`
+//console.log(username);
 //}
-
-
-
-
-
 
 //type conversion = change the datatype of a value to another
 // (strings, numbers, booleans)
@@ -135,29 +117,18 @@ operator precedence
 //console.log(y, typeof y);
 //console.log(z, typeof z);
 
-
-
-
-
 //const = a variable that cant be changed
 
 //let PI = 3.14159;
 //let radius;
 //let circumference;
 
-
 //document.getElementById("mySubmit").onclick = function(){
-    //radius = document.getElementById("myText").value;
-    //radius = Number(radius);
-    //circumference = 2 * PI * radius;
-    //document.getElementById("myH3").textContent = circumference;
+//radius = document.getElementById("myText").value;
+//radius = Number(radius);
+//circumference = 2 * PI * radius;
+//document.getElementById("myH3").textContent = circumference;
 //}
-
-
-
-
-
-
 
 // COUNTER PROGRAM
 
@@ -180,13 +151,7 @@ operator precedence
 //     countLabel.textContent = count;
 // }
 
-
-
-
-
-
-
-//math = built-in object that provides a 
+//math = built-in object that provides a
 //collection of properties and methods
 
 // let x = 3;
@@ -199,16 +164,11 @@ operator precedence
 // //z = Math.trunc(x); võtab koma tagant arvud ära jääb ainult täis arv
 // //z = Math.pow(x, y); saad valida mitu kohta peale koma näitab
 // //z = Math.sqrt(x); võtab juurtjuure
-// //z = Math.log(x); 
+// //z = Math.log(x);
 // let max = Math.max(x, y, z);
 // let min = Math.min(x, y, z);
 
 // console.log(z);
-
-
-
-
-
 
 //RANDOM NUMBER GENERATOR
 
@@ -219,16 +179,11 @@ operator precedence
 //let randomNum;
 
 //myButton.onclick = function (){
-    //randomNum = Math.floor(Math.random()* max) + min;
-    //myLabel.textContent = randomNum;
+//randomNum = Math.floor(Math.random()* max) + min;
+//myLabel.textContent = randomNum;
 //}
 
-
-
-
-
-
- //IF STATEMENTS = IF A CONDITION IS TRUE, EXECUTE SOME CODE IF NOT, DO SOMETHING ELSE
+//IF STATEMENTS = IF A CONDITION IS TRUE, EXECUTE SOME CODE IF NOT, DO SOMETHING ELSE
 
 //let age = 25;
 
@@ -239,14 +194,14 @@ operator precedence
 
 //mysubmit.onclick = function(){
 
-    //age = mytext.value;
-    //age = Number(age);
+//age = mytext.value;
+//age = Number(age);
 
- //if(age >= 100){
-    //resultelement.textContent = `you are too old to enter this site`;
- //}
- //else if(age == 0){
- //resultelement.textContent = `you cant enter, you were just born`;
+//if(age >= 100){
+//resultelement.textContent = `you are too old to enter this site`;
+//}
+//else if(age == 0){
+//resultelement.textContent = `you cant enter, you were just born`;
 //}
 //else if(age >= 18){
 //resultelement.textContent = `you are old enough to enter this site`;
@@ -254,16 +209,12 @@ operator precedence
 //else if(age < 0){
 //resultelement.textContent = `your age cant be below 0`;
 //}
- //else{
-    //resultelement.textContent = `you must be 18+ to enter this site`;
- //}
+//else{
+//resultelement.textContent = `you must be 18+ to enter this site`;
+//}
 //}
 
-
-
-
-
- //.CHECKED = PROPERTY THAT DETERMINES THE CHECKED STATE OF AN 
+//.CHECKED = PROPERTY THAT DETERMINES THE CHECKED STATE OF AN
 // HTML CHECKBOX OR RADIO BUTTON ELEMENT
 
 //const myCheckbox = document.getElementById("myCheckBox");
@@ -277,28 +228,24 @@ operator precedence
 //mySubmitBtn.onclick = function(){
 
 //    if(myCheckbox.checked){
-  //      subResult.textContent = `you are subscribed`;
-    //}
-    //else{
-      //  subResult.textContent = `you are not subscribed`;
-    //}
-    //if(visaBtn.checked){
-      //  paymentResult.textContent = `you are paying with a visa`;
-    //}
-    //else if(masterCardBtn.checked){
-      //  paymentResult.textContent = `you are paying with Mastercard`;
-    //}
-    //else if(payPalBtn.checked){
-      //  paymentResult.textContent = `you are paying with payPal`;
-    //}
-    //else{
-      //  paymentResult.textContent = `you must select payment method`;
-    //}
+//      subResult.textContent = `you are subscribed`;
 //}
-
-
-
-
+//else{
+//  subResult.textContent = `you are not subscribed`;
+//}
+//if(visaBtn.checked){
+//  paymentResult.textContent = `you are paying with a visa`;
+//}
+//else if(masterCardBtn.checked){
+//  paymentResult.textContent = `you are paying with Mastercard`;
+//}
+//else if(payPalBtn.checked){
+//  paymentResult.textContent = `you are paying with payPal`;
+//}
+//else{
+//  paymentResult.textContent = `you must select payment method`;
+//}
+//}
 
 //TERNARY OPERATOR = A SHORTCUT TO IF {} AND ELSE {} STATEMENTS
 //HELPS TO ASSIGN A VARIABLE BASED ON A CONDITION
@@ -316,69 +263,59 @@ operator precedence
 //let discount = purchaseamount >= 100 ? 10 : 0;
 //console.log(`your total is $${purchaseamount - purchaseamount * (discount)}`);
 
-
-
-
 //SWITCH = CAN BE AN EFFICIENT REPLACEMENT TO MANY ELSE IF STATEMENTS
 
 //let day = 1;
 
 //switch(day){
-    //case 1:
-     //     console.log("it is monday");
-       //   break;
-    //case 2:
-       // console.log("it is tuesday");
-        //break;
-    //case 3:
-      //  console.log("it is wednesday");
-       // break;
-    //case 4:
-      //  console.log("it is thursday");
-        //break;
-    //case 5:
-      //  console.log("it is friday");
-        //break;
-    //case 6:
-      //  console.log("it is saturday");
-        //break;
-    //case 7:
-      //  console.log("it is sunday");
-        //break;
+//case 1:
+//     console.log("it is monday");
+//   break;
+//case 2:
+// console.log("it is tuesday");
+//break;
+//case 3:
+//  console.log("it is wednesday");
+// break;
+//case 4:
+//  console.log("it is thursday");
+//break;
+//case 5:
+//  console.log("it is friday");
+//break;
+//case 6:
+//  console.log("it is saturday");
+//break;
+//case 7:
+//  console.log("it is sunday");
+//break;
 //}
 
 //let testscore = 21;
 //let lettergrade;
 
 //switch(true){
-  //  case testscore >=90:
-    //    lettergrade = "A";
-      //  break;
-    //case testscore >=80:
-      //  lettergrade = "B";
-        //break;
-    //case testscore >=60:
-      //  lettergrade = "C";
-        //break;
-    //case testscore >=40:
-      //  lettergrade = "D";
-        //break;
-    //case testscore >=20:
-      //  lettergrade = "E";
-        //break;
-    //default:
-      //  lettergrade = "F";
-        //break;
+//  case testscore >=90:
+//    lettergrade = "A";
+//  break;
+//case testscore >=80:
+//  lettergrade = "B";
+//break;
+//case testscore >=60:
+//  lettergrade = "C";
+//break;
+//case testscore >=40:
+//  lettergrade = "D";
+//break;
+//case testscore >=20:
+//  lettergrade = "E";
+//break;
+//default:
+//  lettergrade = "F";
+//break;
 //}
 
 //console.log(lettergrade);
-
-
-
-
-
-
-
 
 //STRING METHODS = ALLOW YOU TO MANIPULATE AND WORK WITH TEXT (STRINGS)
 
@@ -416,7 +353,6 @@ operator precedence
 //console.log(username)
 //onsole.log(extension)
 
-
 //let text = "hello world";   //replace() - Asendab stringis esimese leitud väärtuse teisega.
 //let newtext = text.replace("world", "javascript");
 //console.log(newtext);
@@ -427,11 +363,6 @@ operator precedence
 
 //let text = "hello, world!  ";  //trim() - Eemaldab tühikud stringi algusest ja lõpust.
 //console.log(text.trim());
-
-
-
-
-
 
 //METHOD CHAINING = CALLING ONE METHOD AFTER ANOTHER IN ONE CONTINOUS LIVE OF CODE.
 
@@ -449,18 +380,11 @@ operator precedence
 
 //console.log(username);
 
-
-
-
-
-
 //--METHOD CHAINING ----
 
 //username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 
 //console.log(username);
-
-
 
 //LOGICAL OPERATORS = USED TO COMBINE OR MANIPULATE BOOLEAN VALUES (true & false)
 
@@ -471,19 +395,19 @@ operator precedence
 //const temp = 30;
 
 //if(temp > 0 && temp <= 30){
-  //  console.log("the weather is good");
+//  console.log("the weather is good");
 //}
 //else{
-  //  console.log("the weather is bad");
+//  console.log("the weather is bad");
 //}
 
 //const isSunny = true;
 
 //if(!isSunny){
-  //  console.log("it is cloudy");
+//  console.log("it is cloudy");
 //}
 //else{
-  //  console.log("it is Sunny");
+//  console.log("it is Sunny");
 //}
 
 // =ASSIGNMENT OPERATOR
@@ -495,14 +419,11 @@ operator precedence
 //const PI = 3.14;
 
 //if(PI !== "3.14"){
-  //  console.log("that is Pi");
+//  console.log("that is Pi");
 //}
 //else{
-  //  console.log("that is not Pi");
+//  console.log("that is not Pi");
 //}
-
-
-
 
 // function controlage() {
 //   let age = prompt("Sisesta oma vanus:");
@@ -510,7 +431,7 @@ operator precedence
 //   if (age === "" || isNaN(age)) {
 //     alert("Sisend ei ole korrektne. Palun sisesta vanus arvuliselt.");
 //   } else {
-//     age = Number(age); 
+//     age = Number(age);
 
 //     if (age >= 1 && age <=6){
 //       alert("oled liiga noor et süüa saada,aeg arvuti kinni panna.");
@@ -527,9 +448,6 @@ operator precedence
 //   }
 // }
 // controlage();
-
-
-
 
 // function calculate() {
 //   let x = prompt("x:");
@@ -582,11 +500,6 @@ operator precedence
 // }
 // calculate();
 
-
-
-
-
-
 // WHILE LOOP = REPEAT SOME CODE WHILE SOME CONDITION IS TRUE
 
 // let username = "Bert";
@@ -616,12 +529,6 @@ operator precedence
 //     }
 // }
 
-
-
-
-
-
-
 //  FOR LOOP = REPEAT SOME CODE A LIMITED AMOUNT OF TIMES
 
 // for(let i = 20; i >0; i--){
@@ -638,9 +545,6 @@ operator precedence
 //         console.log(i);
 //     }
 // }
-
-
-
 
 //NUMBER GUESSING GAME
 
@@ -666,10 +570,6 @@ operator precedence
 //     running = false;
 // }
 
-
-
-
-
 // FUNCTION = A SECTION OF REUSABLE CODE.
 // DECLARE CODE ONCE, USE IT WHENEVER YOU WANT.
 // CALL THE FUNCTION TO EXECUTE THAT CODE.
@@ -694,15 +594,9 @@ operator precedence
 // let answer = add(2, 3);
 // console.log(answer);
 
-
-
-
-
 //VARIALE SCOPE = WHERE A VARIABLE IS RECONIZED AND ACCESSIBLE (LOCAL AND GLOBAL)
 
-
 // let x = 3;
-
 
 // function1();
 
@@ -714,11 +608,7 @@ operator precedence
 //         console.log(x);
 //}
 
-
-
 //ARRAY = A VARIABLE LIKE STRUCTURE THAT CAN HOLD MORE THAN 1 VALUE
-
-
 
 // let fruits = ["apple", "orange", "cherry", "coconut"];
 
@@ -737,7 +627,6 @@ operator precedence
 
 // console.log(numOfFruits);
 
-
 // for(let i = 0; i < fruits.length; i--){
 //     console.log(fruits[i]);
 //}
@@ -747,9 +636,6 @@ operator precedence
 // for(let fruit of fruits){
 //     console.log(fruit);
 // }
-
-
-
 
 // SPREAD OPERATOR == ... ALLOWS AN ITERABLE SUCH AS AN ARRAY OR STRING TO BE EXPANDED INTO SEPERATE ELEMENTS (UNPACK THE ELEMENTS)
 
@@ -764,14 +650,11 @@ operator precedence
 
 // console.log(letters);
 
-
 // let fruits = ["apple", "orange", "cherry"];
 // let vegetables = ["carrot", "potato", "tomato"];
 // let newfruits = [...fruits,...vegetables, "eggs", "milk"];
 
 // console.log(foods);
-
-
 
 //REST PARAMENTS = (...REST) ALLOW A FUNCTION WORK WITH A VARIABLE NUMBER OF ARGUMENTS BY BUNDLING THEM INTO AN ARRAY
 // SPREAD = EXPANDS AN ARRAY INTO SEPERATE ELEMENTS
@@ -828,9 +711,6 @@ operator precedence
 
 // console.log(fullname);
 
-
-
-
 // function rolldice(){
 
 //     const numdice = document.getElementById("numdice").value;
@@ -850,16 +730,10 @@ operator precedence
 //     diceimages.innerHTML = images.join('');
 // }
 
-
-
-
-
 // CALLBACK = A FUNCTION THAT IS PASSED AS AN ARGUMENT
 // TO ANOTHER FUNCTION.
 
-
 // hello(leave);
-
 
 // function hello(callback){
 //     console.log("hello");
@@ -878,7 +752,6 @@ operator precedence
 //     console.log("bye");
 // }
 
-
 // sum(displayconsole, 1, 2);
 
 // function sum(callback, x, y){
@@ -894,17 +767,15 @@ operator precedence
 //     document.getElementById("myH1").textContent = result;
 // }
 
-
-
 //CAMEL TO title
 
 // function getWords(camelStr) {
-  
+
 //   return camelStr.match(/([A-Z]?[a-z]+)/g) || [];
 // }
 
 // function camelToTitleCase(camelStr) {
-  
+
 //   if (camelStr === "") {
 //     return "";
 //   }
@@ -918,20 +789,15 @@ operator precedence
 //   return titleWords.join(" ");
 // }
 
-// console.log(camelToTitleCase("SuurPere"));      
-// console.log(camelToTitleCase("TereTulemastSiia"));     
-// console.log(camelToTitleCase("SuurRohelineAuto"));                
+// console.log(camelToTitleCase("SuurPere"));
+// console.log(camelToTitleCase("TereTulemastSiia"));
+// console.log(camelToTitleCase("SuurRohelineAuto"));
 // console.log(camelToTitleCase("IlusKollanePäike"));
-
-
-
 
 //NUMBER GUESSING GAME
 
-
-
 // function numberGuessingGame() {
-  
+
 //   const secretNumber = Math.floor(Math.random() * 100) + 1;
 //   const maxAttempts = 15;
 //   let attempts = 0;
@@ -942,7 +808,6 @@ operator precedence
 //   while (attempts < maxAttempts) {
 //     let guess = prompt(`Katse ${attempts + 1}: Tee oma pakkumine`);
 
-    
 //     if (guess === null || guess.trim() === "" || isNaN(guess)) {
 //       alert("Sisesta korrektne arv.");
 //       continue;
@@ -964,17 +829,9 @@ operator precedence
 //   alert(`Mäng läbi! Õige number oli ${secretNumber}. Proovi uuesti!`);
 // }
 
-
 // numberGuessingGame();
 
-
-
-
-
 //Temperature Conversion Program
-
-
-
 
 // function celsiusToFahrenheit(celsius) {
 //   return (celsius * 9) / 5 + 32;
@@ -1000,7 +857,7 @@ operator precedence
 //     alert("Palun sisesta arvuline temperatuur.");
 //     return;
 //   }
-  
+
 //   const temperature = Number(tempInput);
 //   const scale = scaleInput.trim().toUpperCase();
 
@@ -1030,13 +887,7 @@ operator precedence
 
 // temperatureConverter();
 
-
-
-
-
-
 //FOREACH () = METHOD TO ITERATE OVER THE ELEMENTS OF AN ARRAY AND APPLY A SPECIFIED FUNCTION (CALLBACK) TO EACH ELEMENT
-
 
 // let numbers = [1, 2, 3, 4, 5];
 
@@ -1080,7 +931,6 @@ operator precedence
 //     console.log(element);
 // }
 
-
 //.MAP() = ACCEPTS A CALLBACK AND APPLIES THAT FUNCTION TO EACH ELEMENT OF AN ARRAY, THEN RETURN A NEW ARRAY
 
 // const numbers = [1, 2, 3, 4, 5];
@@ -1103,7 +953,6 @@ operator precedence
 
 // console.log(studentsLower);
 
-
 // function upperCase(element){
 // return element.toUpperCase();
 // }
@@ -1111,7 +960,6 @@ operator precedence
 // function LowerCase(element){
 //     return element.toLowerCase();
 // }
-
 
 // const dates = ["2024-1-10", "2025-2-20", "2020-3-30"];
 // const formattedDates = dates.map(formatDates);
@@ -1141,8 +989,6 @@ operator precedence
 
 // const ages = [5, 5, 10, 15, 20, 25, 30];
 
-
-
 // function isAdult(element){
 //     return element >= 18;
 // }
@@ -1165,14 +1011,7 @@ operator precedence
 
 // console.log(getShortWords);
 
-
-
-
-
-
 //.REDUCE () = REDUCE THE ELEMENTS OF AN ARRAY TO A SINGLE VALUE
-
-
 
 // const prices = [5, 30, 10, 25, 15, 20];
 
@@ -1183,7 +1022,6 @@ operator precedence
 //  function sum(previous, next){
 //     return accumulator + element;
 //  }
-
 
 // const grades = [75, 80, 90, 80, 65, 95];
 
@@ -1201,39 +1039,24 @@ operator precedence
 //     return Math.min(accumulator, element);
 // }
 
-
-
-
-
 //FUNCTION DECLARATION = DEFINE A REUSABLE BLOCK OF CODE THAT PERFORMS ASPECIFIC TASK
-
 
 // function hello(){
 //     console.log("hello");
 // }
 
-
 //FUNCTION EXPRESSIONS = A WAY TO DEFINE FUNCTION AS VALUES OR VARIABLES
-
 
 // const hello = function(){
 //     console.log("hello");
 // }
 
-
 // setTimeout(function(){
 //     console.log("hello");
 // }, 3000);
 
-
-
-
-
 //ARROW FUNCTION = A CONCISE WAY TO WRITE FUNCTION EXPRESSIONS GOOD FOR SIMPLE FUNCTIONS THAT YOU USE ONLY ONCE
 // (PARAMETERS) => SOME CODE
-
-
-
 
 // const wassup = (name, age) => {console.log(`wassup ${name}`)
 //                                console.log(`you are ${age} years old`)};
@@ -1245,14 +1068,9 @@ operator precedence
 //     console.log("hello");
 // }
 
-
-
-
-
 //OBJECT = A COLLECTION OF RELATED AND/OR METHODS
 //CAN REPRESENT REAL WORLD OBJECTS (PEOPLE,PRODUCTS,PLACES)
 //OBJECT = {KEY:VALUE,FUNCTION()}
-
 
 // const person = {
 //   firstName: "Spongebob",
@@ -1272,38 +1090,29 @@ operator precedence
 //   eat: function(){console.log("i am eating crack")},
 // }
 
- // console.log(person.firstName);
- // console.log(person.lastName);
- // console.log(person.age);
- // console.log(person.isEmployed);
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.isEmployed);
 
- // console.log(person2.firstName);
- // console.log(person2.lastName);
- // console.log(person2.age);
- // console.log(person2.isEmployed);
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// console.log(person2.isEmployed);
 
- // person.sayHello();
- // person2.sayHello();
+// person.sayHello();
+// person2.sayHello();
 
 // person.eat();
 // person2.eat();
 
-
-
-
-//THIS = REFERENCE TO THE OBJECT WHERE THIS IS USED 
+//THIS = REFERENCE TO THE OBJECT WHERE THIS IS USED
 // (THE OBJECT DEPENDS ON THE IMMEDIATE CONTEXT)
 //PERSON.NAME = THIS.NAME
 
 // console.log(this);
 
-
-
-
-
-
 //SHOPPING CART ANALÜÜS
-
 
 // let shoppingCart = [
 //   { name: "õun", quantity: 4 },
@@ -1342,3 +1151,218 @@ operator precedence
 
 // shoppingCart.sort((a,b) => a.quantity- b.quantity);
 // console.log("tooted koguse järgi", shoppingCart);
+
+//CONSTRUCTOR
+
+// function Car(make, model, year, color){
+//   this.make = make,
+//   this.model = model,
+//   this.year = year,
+//   this.color = color,
+//   this.drive = function(){console.log(`You drive the ${this.model}`)}
+// }
+
+// const car1 = new Car("Ford", "Mustang", 2020, "red");
+// const car2 = new Car("Chevrolet", "Camaro", 2021, "blue");
+// const car3 = new Car("Dodge", "Challenger", 2019, "black");
+
+// car1.drive();
+// car2.drive();
+// car3.drive();
+
+//CLASS = PROVIDES A MORE STRUCTURED AND CLEAR WAY TO WORK WITH OBJECTS COMPARED TO TRADITIONAL CONSTRUCTOR FUNCTIONS
+//EX. STATIC KEYWORD, ENCAPSULATION, INHERITANCE
+
+// function Product(name, price) {
+//   this.name = name;
+//   this.price = price;
+
+//   this.displayProduct = function(){
+//     console.log(`product: ${this.name}`);
+//     console.log(`Price: $${this.price.tofixed(2)}`);
+//  };
+
+//  this.calculateTotal = function(salestax){
+//   return this.price + (this.price * salestax);
+//  }
+// }
+
+// const salestax = 0.05;
+
+// const product1 = new Product("Laptop", 999.99);
+// const product2 = new Product("Smartphone", 599.99);
+// const product3 = new Product("Tablet", 399.99);
+
+// product1.displayProduct();
+
+// const total = product1.calculateTotal(salestax);
+// console.log(`Total with sales tax: $${total.toFixed(2)}`);
+
+//STATIC = KEYWORD THAT DEFINES PROPERTIES OR METHODS THAT BELONG TO A CLASS ITSELF.
+
+// class MathUtil{
+//   static PI = 3.14159;
+
+//   static getDiameter(radius){
+//     return radius * 2;
+//   }
+//   static getCircumference(radius){
+//     return 2 * this.PI * radius;
+//   }
+//   static getArea(radius){
+//     return this.PI * radius * radius;
+//   }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCircumference(10));
+// console.log(MathUtil.getArea(10));
+
+// class User{
+//   static userCount = 0;
+
+//   constructor(username){
+//     this.username = username;
+//     User.userCount++;
+//   }
+
+//   static getUsercount(){
+//     console.log(`There are ${User.userCount} users online`);
+//   }
+//   sayHello(){
+//     console.log(`Hello,my username is ${this.username}`);
+//   }
+// }
+
+// const user1 = new User("bert");
+// const user2 = new User("kalle");
+// const user3 = new User("mari");
+
+// console.log(user1.username);
+// console.log(user2.username);
+// console.log(user3.username);
+// console.log(User.userCount);
+
+// user1.sayHello();
+// user2.sayHello();
+// user3.sayHello();
+
+//INHERITANCE = ALLOWS A NEW CLASS TO INHERIT PROPERTIES AND METHOD
+//FROM AN EXISTING CLASS (PARENT -> CHILD)
+//HELPS WITH CODE REUSABILITY
+
+// class Animal{
+//   alive = true;
+
+//   eat(){
+//     console.log(`this ${this.name} is eating`);
+//   }
+//   sleep(){
+//     console.log(`this ${this.name} is sleeping`);
+//   }
+// }
+// class rabbit extends Animal{
+//   name = "rabbit";
+// }
+// class dog extends Animal{
+//   name = "dog";
+// }
+// class cat extends Animal{
+//   name = "cat";
+// }
+
+// const rabbit = new rabbit();
+// const dog = new dog();
+// const cat = new cat();
+
+// rabbit.alive = false;
+
+// console.log(rabbit.alive);
+// rabbit.eat();
+// rabbit.sleep();
+
+// console.log(dog.alive);
+// dog.eat();
+// dog.sleep();
+
+// console.log(cat.alive);
+// cat.eat();
+// cat.sleep();
+
+//GETTER
+//SETTER
+
+// class rectangle{
+
+//   constructor(width, height){
+//     this.width = width;
+//     this.height = height;
+//   }
+
+//   set width(newWidth){
+//     if(newWidth > 0){
+//       this._width = newWidth;
+//     }
+//     else{
+//       console.error("Width must be a positive number");
+//     }
+// }
+
+// get width(){
+//     return this._width;
+// }
+// get height(){
+//     return this._height;
+// }
+
+// }
+// const rectangle = new rectangle(-1000000, 30);
+
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+
+// class Person {
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//   }
+//   set firstName(newFirstName) {
+//     if (typeof newFirstName === "string" && newFirstName.length > 0) {
+//       this._firstName = newFirstName;
+//     } else {
+//       console.error("First name must be a non-empty string");
+//     }
+//   }
+//   set age(newAge) {
+//     if (typeof newAge === "number" && newAge >= 0) {
+//       this._age = newAge;
+//     } else {
+//       console.error("Age must be a non-negative number");
+//     }
+//   }
+
+//   set lastName(newLastName) {
+//     if (typeof newLastName === "string" && newLastName.length > 0) {
+//       this._lastName = newLastName;
+//     } else {
+//       console.error("Last name must be a non-empty string");
+//     }
+// }
+//   get firstName() {
+//     return this._firstName;
+//   }
+//   get lastName() {
+//     return this._lastName;
+//   }
+//   get age() {
+//     return this._age;
+//   }
+// }
+
+// const person = new Person("bert", "põllutse", 30);
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
